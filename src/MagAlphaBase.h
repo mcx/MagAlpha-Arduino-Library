@@ -102,7 +102,7 @@ public:
     MagAlphaSSI();
     void begin();
     //void begin(int32_t ssiClkFrequency);
-    void begin(SPIClass *ssi = &SPI);
+    void begin(SPIClass *ssi);
     void begin(int32_t ssiSsckFrequency, SPIClass *ssi = &SPI);
     void begin(int32_t ssiSsckFrequency, MagAlphaSSIMode ssiMode, SPIClass *ssi = &SPI);
     void end();
